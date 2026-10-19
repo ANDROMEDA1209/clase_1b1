@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard interactivo con ventas simuladas de Nube de Azúcar, una heladería ficticia de Guayaquil.">
+  <meta name="theme-color" content="#101a2c">
+  <title>Dashboard de ventas | Nube de Azúcar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-page">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Data Academy">
+      <span class="brand-icon">B<span>I</span></span><span>Data<span class="brand-light">Academy</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="nav-link" href="index.html">Academia</a><a class="nav-link active" href="dashboard.html">Dashboard de ventas</a>
+    </nav>
+    <a class="topbar-cta" href="index.html#retos">Practicar BI <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="page-wrap dashboard-wrap">
+    <div class="dash-title-row">
+      <div><p class="eyebrow"><span class="eyebrow-dot"></span> ANALÍTICA COMERCIAL · GUAYAQUIL, ECUADOR</p><h1>Ventas con perspectiva.</h1><p class="dashboard-subtitle">Explora el año comercial de Nube de Azúcar y encuentra lo que mueve cada decisión.</p></div>
+      <div class="fiction-stamp"><span>▧</span><div><strong>CASO FICTICIO</strong><small>Datos simulados · Año 2025</small></div></div>
+    </div>
+    <section class="filter-card" aria-labelledby="filters-heading">
+      <div class="filter-heading"><div><span class="filter-icon">⌕</span><div><h2 id="filters-heading">Explora tus datos</h2><p>Combina filtros para ver cada perspectiva del negocio.</p></div></div><button class="clear-button" id="clear-filters" type="button">↺ Limpiar filtros</button></div>
+      <div class="filters-grid">
+        <label>Año<select id="filter-year"><option value="all">Todos</option></select></label>
+        <label>Mes<select id="filter-month"><option value="all">Todos los meses</option></select></label>
+        <label>Desde<input id="filter-start" type="date"></label>
+        <label>Hasta<input id="filter-end" type="date"></label>
+        <label>Producto<select id="filter-product"><option value="all">Todos los productos</option></select></label>
+        <label>Categoría<select id="filter-category"><option value="all">Todas las categorías</option></select></label>
+        <label>Sector<select id="filter-sector"><option value="all">Todos los sectores</option></select></label>
+        <label>Método de pago<select id="filter-payment"><option value="all">Todos los métodos</option></select></label>
+      </div>
+      <div class="filter-foot"><span><i class="live-indicator"></i><strong id="records-count">0 registros</strong> en la selección</span><span>Los datos se recalculan al cambiar cualquier filtro</span></div>
+    </section>
+
+    <section class="kpi-grid" aria-label="Indicadores del periodo filtrado">
+      <article class="metric-card metric-primary"><div class="metric-top"><span>INGRESOS TOTALES</span><span class="metric-symbol">$</span></div><strong id="kpi-revenue">$0</strong><div class="metric-foot"><span id="kpi-revenue-change" class="change-chip">—</span><span>vs. periodo anterior</span></div></article>
+      <article class="metric-card"><div class="metric-top"><span>UNIDADES VENDIDAS</span><span class="metric-symbol">▦</span></div><strong id="kpi-units">0</strong><div class="metric-foot"><span class="metric-note">UNIDADES</span><span>en el periodo</span></div></article>
+      <article class="metric-card"><div class="metric-top"><span>TRANSACCIONES</span><span class="metric-symbol">⇄</span></div><strong id="kpi-transactions">0</strong><div class="metric-foot"><span class="metric-note">PEDIDOS</span><span>ventas registradas</span></div></article>
+      <article class="metric-card"><div class="metric-top"><span>TICKET PROMEDIO</span><span class="metric-symbol">◉</span></div><strong id="kpi-ticket">$0</strong><div class="metric-foot"><span class="metric-note">POR VENTA</span><span>ingreso / transacción</span></div></article>
+    </section>
+    <section class="insight-strip" aria-label="Hallazgos principales">
+      <div class="insight-item"><span class="insight-icon">✦</span><div><small>PRODUCTO ESTRELLA</small><strong id="kpi-product">—</strong></div></div>
+      <div class="insight-item"><span class="insight-icon">⌁</span><div><small>MEJOR MES</small><strong id="kpi-best-month">—</strong></div></div>
+      <div class="insight-item"><span class="insight-icon">↗</span><div><small>SECTOR LÍDER</small><strong id="kpi-best-sector">—</strong></div></div>
+      <div class="insight-item"><span class="insight-icon">◷</span><div><small>MÉTODO PREFERIDO</small><strong id="kpi-best-payment">—</strong></div></div>
+    </section>
+    <section class="charts-grid" aria-label="Visualizaciones de ventas">
+      <article class="chart-card chart-wide"><div class="chart-card-heading"><div><span class="chart-overline">TENDENCIA</span><h2>Ingresos a lo largo del año</h2></div><span class="chart-caption">USD · Ventas mensuales</span></div><div class="chart-canvas"><canvas id="monthly-chart" aria-label="Ingresos y ventas mensuales" role="img"></canvas></div></article>
+      <article class="chart-card"><div class="chart-card-heading"><div><span class="chart-overline">MIX DE VENTAS</span><h2>Participación por categoría</h2></div></div><div class="chart-canvas chart-canvas-small"><canvas id="category-chart" aria-label="Participación de ventas por categoría" role="img"></canvas></div><div id="category-legend" class="chart-legend"></div></article>
+      <article class="chart-card"><div class="chart-card-heading"><div><span class="chart-overline">PREFERENCIAS</span><h2>Productos más vendidos</h2></div></div><div class="chart-canvas chart-canvas-small"><canvas id="product-chart" aria-label="Ventas por producto" role="img"></canvas></div></article>
+      <article class="chart-card"><div class="chart-card-heading"><div><span class="chart-overline">UBICACIÓN</span><h2>Ingresos por sector</h2></div></div><div class="chart-canvas chart-canvas-small"><canvas id="sector-chart" aria-label="Ingresos por sector de Guayaquil" role="img"></canvas></div></article>
+      <article class="chart-card"><div class="chart-card-heading"><div><span class="chart-overline">PAGO</span><h2>Métodos de pago</h2></div></div><div class="chart-canvas chart-canvas-small"><canvas id="payment-chart" aria-label="Ingresos por método de pago" role="img"></canvas></div></article>
+    </section>
+    <section class="insight-card"><div class="insight-heading"><span class="insight-spark">✦</span><div><span class="chart-overline">LECTURA AUTOMÁTICA</span><h2>¿Qué nos dicen los datos?</h2></div><span class="insight-generated">ACTUALIZADO CON TUS FILTROS</span></div><div class="auto-insights" id="auto-insights" aria-live="polite"></div></section>
+    <section class="table-card"><div class="table-heading"><div><span class="chart-overline">DETALLE DE VENTAS</span><h2>Explora las transacciones</h2><p id="table-caption">Registros según los filtros seleccionados</p></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="table-search" type="search" placeholder="Buscar en resultados…" aria-label="Buscar ventas"></label></div><div class="table-scroll"><table><thead><tr><th>TRANSACCIÓN</th><th>FECHA</th><th>PRODUCTO</th><th>CATEGORÍA</th><th>SECTOR</th><th>UNIDADES</th><th>PRECIO</th><th>INGRESO</th><th>PAGO</th></tr></thead><tbody id="sales-table-body"></tbody></table></div><div class="table-footer"><span id="table-count">0 registros</span><div class="pagination"><button type="button" id="prev-page" aria-label="Página anterior">←</button><span id="page-label">1 / 1</span><button type="button" id="next-page" aria-label="Página siguiente">→</button></div></div></section>
+    <div class="simulated-note"><span>ⓘ</span><p><strong>Nota:</strong> Nube de Azúcar es una heladería ficticia. Todas las ventas y cifras de este panel son datos simulados con fines educativos; no representan transacciones reales.</p></div>
+    <section class="dashboard-learning-cta"><div><span class="eyebrow">DE LOS DATOS A LA DECISIÓN</span><h2>¿Qué historia encontraste en los datos?</h2><p>Practica interpretación, ETL y toma de decisiones con la Academia BI.</p></div><a class="button button-primary" href="index.html#retos">Ir a los retos <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="page-wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-icon">B<span>I</span></span><span>Data<span class="brand-light">Academy</span></span></a><span>Dashboard educativo · Datos comerciales simulados</span><a href="index.html">Volver a la academia ↗</a></div><div class="page-wrap footer-disclaimer">Contenido educativo y datos simulados con fines demostrativos.</div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
