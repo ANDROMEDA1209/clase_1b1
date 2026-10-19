@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recorre el sílabo de Sistemas de Información para la Inteligencia de Negocios como una aventura gamificada.">
+  <meta name="theme-color" content="#101a2c">
+  <title>BI Quest | Ruta ISISI805</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bi-quest.css">
+</head>
+<body class="quest-page">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Data Academy, inicio">
+      <span class="brand-icon">B<span>I</span></span>
+      <span>Data<span class="brand-light">Academy</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="nav-link" href="index.html">Academia</a>
+      <a class="nav-link" href="dashboard.html">Dashboard de ventas</a>
+      <a class="nav-link active" href="bi-quest.html" aria-current="page">BI Quest</a>
+    </nav>
+    <a class="topbar-cta" href="#mundos">Explorar misiones <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main>
+    <section class="quest-hero">
+      <div class="page-wrap">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> TU SÍLABO · TU AVENTURA</p>
+        <div class="quest-heading">
+          <div>
+            <h1>BI <span>Quest</span></h1>
+            <p class="quest-lead">Transforma datos en decisiones. Completa misiones, vence a los jefes y protege el océano.</p>
+          </div>
+          <div class="course-stamp"><span id="course-code">ISISI805</span><strong id="course-cycle">UTC · 8vo ciclo</strong><small id="course-period">12 oct 2026 — 21 feb 2027 · 3 créditos · 144 h</small></div>
+        </div>
+        <p class="teacher-line"><span id="course-name">Sistemas de Información para la Inteligencia de Negocios</span><span class="course-separator">·</span><span id="course-teacher">Ing. Luis René Quisaguano, MSc.</span></p>
+        <section class="quest-stats" aria-label="Tu progreso en BI Quest">
+          <article class="quest-stat quest-rank"><span class="stat-label">RANGO</span><strong id="quest-rank">Becario de Datos</strong><span id="quest-next-rank">Siguiente: Analista Junior</span></article>
+          <article class="quest-stat"><span class="stat-label">EXPERIENCIA</span><strong id="quest-xp">0 XP</strong><span>La experiencia abre nuevos rangos</span></article>
+          <article class="quest-stat"><span class="stat-label">RACHA ACTIVA</span><strong id="quest-streak">0 días</strong><span id="course-timezone">Actividad en America/Guayaquil</span></article>
+          <article class="quest-stat"><span class="stat-label">AVANCE GLOBAL</span><strong id="quest-progress-label">0%</strong><span id="quest-progress-detail">0 de 12 misiones</span><div class="quest-progress" role="progressbar" aria-label="Avance global de misiones" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="quest-progress"></span></div></article>
+          <article class="quest-stat quest-boss-stat"><span class="stat-label">PRÓXIMO JEFE</span><strong id="next-boss-name">EVAL1 · Fundamentos de BI</strong><span id="next-boss-countdown" aria-live="off">Calculando…</span></article>
+        </section>
+        <div class="quest-actions">
+          <span id="quest-save-status" role="status">Progreso guardado en este navegador</span>
+          <button class="button button-outline" id="reset-progress" type="button">Reiniciar progreso</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-wrap quest-content">
+      <section class="boss-section" aria-labelledby="boss-heading">
+        <div class="section-heading quest-section-heading">
+          <div><p class="eyebrow">DESAFÍOS DEL CICLO</p><h2 id="boss-heading">Jefes finales</h2></div>
+          <p>Prepara cada evaluación dominando las misiones de su mundo.</p>
+        </div>
+        <div class="boss-grid" id="boss-grid"></div>
+      </section>
+
+      <section class="worlds-section" id="mundos" aria-labelledby="worlds-heading">
+        <div class="section-heading quest-section-heading">
+          <div><p class="eyebrow">MAPA DE CAMINO</p><h2 id="worlds-heading">Tres mundos. Doce misiones.</h2></div>
+          <p>Avanza en orden: completa los cuatro pasos y aprueba el quiz para abrir la siguiente misión.</p>
+        </div>
+        <div id="world-map" class="world-map"></div>
+      </section>
+
+      <section class="sidequest-section quest-panel" aria-labelledby="sidequest-heading">
+        <div class="section-heading quest-section-heading">
+          <div><p class="eyebrow">MISIÓN ESPECIAL · PLASTRACK</p><h2 id="sidequest-heading">Guardián del océano</h2></div>
+          <p>Usa datos satelitales de Copernicus para contar una historia sobre microplásticos.</p>
+        </div>
+        <div id="sidequest-card"></div>
+      </section>
+
+      <section class="library-section quest-panel" aria-labelledby="library-heading">
+        <div class="section-heading quest-section-heading">
+          <div><p class="eyebrow">RECURSOS PARA TU VIAJE</p><h2 id="library-heading">Biblioteca</h2></div>
+          <p>Abre una lectura y márcala como leída para sumar XP.</p>
+        </div>
+        <div id="library-list" class="library-list"></div>
+      </section>
+
+      <section class="badges-section quest-panel" aria-labelledby="badges-heading">
+        <div class="section-heading quest-section-heading">
+          <div><p class="eyebrow">LOGROS DE LA RUTA</p><h2 id="badges-heading">Insignias</h2></div>
+          <p id="badge-summary">0 de 8 insignias desbloqueadas</p>
+        </div>
+        <div id="badge-list" class="badge-list"></div>
+      </section>
+
+      <section class="quest-footer-note">
+        <p>El progreso de esta página se guarda localmente en este navegador. El sitio no tiene inicio de sesión ni base de datos para sincronizarlo entre usuarios o dispositivos.</p>
+        <p>Fechas y horas de evaluación en America/Guayaquil (UTC−05:00).</p>
+      </section>
+    </div>
+  </main>
+
+  <div class="quest-toast" id="quest-toast" role="status" aria-live="polite" hidden></div>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+  <footer class="site-footer"><div class="page-wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-icon">B<span>I</span></span><span>Data<span class="brand-light">Academy</span></span></a><span>BI Quest · ISISI805 · UTC</span><a href="index.html">Volver a la academia ↗</a></div><div class="page-wrap footer-disclaimer">Ruta de aprendizaje educativa · Sistemas de Información para la Inteligencia de Negocios.</div></footer>
+  <script src="js/bi-quest.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+{
+  "course": {
+    "code": "ISISI805",
+    "name": "Sistemas de Información para la Inteligencia de Negocios",
+    "institution": "UTC",
+    "cycle": "8vo ciclo",
+    "teacher": "Ing. Luis René Quisaguano, MSc.",
+    "period": "12/10/2026 – 21/02/2027",
+    "credits": 3,
+    "hours": 144,
+    "timezone": "America/Guayaquil"
+  },
+  "passingPercent": 70,
+  "ranks": [
+    { "name": "Becario de Datos", "xp": 0 },
+    { "name": "Analista Junior", "xp": 150 },
+    { "name": "Analista BI", "xp": 400 },
+    { "name": "Arquitecto de Datos", "xp": 700 },
+    { "name": "Estratega BI", "xp": 1000 }
+  ],
+  "badges": [
+    { "id": "first-insight", "name": "Primer Insight", "icon": "✦", "description": "Aprueba tu primer quiz." },
+    { "id": "etl-master", "name": "Maestro del ETL", "icon": "⤧", "description": "Aprueba la misión de procesos ETL." },
+    { "id": "star-architect", "name": "Arquitecto Estrella", "icon": "⌘", "description": "Completa el Mundo 3." },
+    { "id": "perfect-quiz", "name": "Quiz Perfecto", "icon": "★", "description": "Obtén el 100 % en un quiz." },
+    { "id": "seven-day-streak", "name": "Constancia 7 días", "icon": "⚡", "description": "Mantén una racha de siete días activos." },
+    { "id": "world-boss", "name": "Jefe de Mundo", "icon": "♛", "description": "Completa un mundo entero." },
+    { "id": "ocean-guardian", "name": "Guardián del Océano", "icon": "🌊", "description": "Completa la Side Quest PlasTrack." },
+    { "id": "bookworm", "name": "Ratón de Biblioteca", "icon": "▤", "description": "Lee todos los recursos de la biblioteca." }
+  ],
+  "worlds": [
+    {
+      "id": "world-1",
+      "name": "Fundamentos de BI",
+      "subtitle": "Mundo 1 · El origen de la inteligencia",
+      "evaluation": "Ensayos e informes con rúbrica",
+      "missions": [
+        {
+          "id": "mission-1",
+          "number": 1,
+          "title": "Conceptos básicos",
+          "summary": "Business Intelligence integra datos, procesos y tecnología para convertir información en conocimiento útil y apoyar decisiones mejor fundamentadas.",
+          "quiz": [
+            { "question": "¿Cuál es el propósito central de BI?", "options": ["Almacenar archivos sin analizarlos", "Transformar datos en información para apoyar decisiones", "Reemplazar todas las decisiones humanas"], "answer": 1, "explanation": "BI organiza y analiza datos para entregar contexto y evidencia a quienes toman decisiones." },
+            { "question": "¿Qué distingue a un dato de un insight?", "options": ["El insight interpreta datos en un contexto y sugiere significado", "El dato siempre es más útil", "No existe diferencia"], "answer": 0, "explanation": "Un insight surge al interpretar datos en relación con una pregunta, un objetivo y su contexto." },
+            { "question": "¿Cuál es una práctica responsable al presentar un hallazgo?", "options": ["Ocultar las limitaciones", "Separar evidencia, interpretación y recomendación", "Afirmar causalidad a partir de cualquier correlación"], "answer": 1, "explanation": "Separar lo observado de su interpretación y de la acción propuesta evita conclusiones engañosas." },
+            { "question": "¿Qué conviene definir antes de analizar datos?", "options": ["Una pregunta u objetivo de negocio", "El color de cada gráfico", "La conclusión que se quiere confirmar"], "answer": 0, "explanation": "Una pregunta concreta orienta qué datos y análisis son pertinentes sin predeterminar el resultado." }
+          ]
+        },
+        {
+          "id": "mission-2",
+          "number": 2,
+          "title": "Componentes de la Inteligencia de Negocios",
+          "summary": "Una solución BI combina fuentes de datos, integración, almacenamiento, modelos analíticos, visualización y personas que convierten hallazgos en acciones.",
+          "quiz": [
+            { "question": "¿Qué tarea realiza la integración de datos?", "options": ["Combina y prepara datos de distintas fuentes", "Define por sí sola la estrategia empresarial", "Sustituye la visualización"], "answer": 0, "explanation": "La integración reúne datos heterogéneos y los prepara para su uso analítico." },
+            { "question": "¿Qué componente permite explorar indicadores y tendencias?", "options": ["Una herramienta de visualización y análisis", "Un cable de red", "Un archivo sin estructura"], "answer": 0, "explanation": "Las herramientas analíticas ayudan a consultar y comunicar métricas, tendencias y relaciones." },
+            { "question": "¿Quién convierte un hallazgo de BI en una decisión?", "options": ["Únicamente el servidor", "Las personas responsables, con contexto y evidencia", "El gráfico automáticamente"], "answer": 1, "explanation": "La tecnología apoya; las personas responsables evalúan el contexto y deciden." },
+            { "question": "¿Qué función cumple una fuente de datos?", "options": ["Proporcionar registros para su integración y análisis", "Garantizar por sí sola que cada conclusión sea correcta", "Reemplazar la definición de indicadores"], "answer": 0, "explanation": "Las fuentes aportan registros que deben integrarse, validarse y analizarse con contexto." }
+          ]
+        },
+        {
+          "id": "mission-3",
+          "number": 3,
+          "title": "Sistemas de información, valor y ventaja corporativa",
+          "summary": "Los sistemas de información coordinan personas, procesos y tecnología. Su valor se demuestra cuando mejoran resultados, reducen incertidumbre o habilitan una ventaja sostenible.",
+          "quiz": [
+            { "question": "¿Qué caracteriza a un sistema de información?", "options": ["Solo hardware", "Personas, procesos, datos y tecnología que trabajan en conjunto", "Un tablero aislado"], "answer": 1, "explanation": "Un sistema de información es sociotécnico: integra personas, procesos, datos y tecnología." },
+            { "question": "¿Cuándo aporta valor una solución de BI?", "options": ["Cuando genera muchos gráficos", "Cuando responde una pregunta y orienta una acción útil", "Cuando evita definir objetivos"], "answer": 1, "explanation": "El valor depende de su contribución a objetivos y decisiones, no de la cantidad de visualizaciones." },
+            { "question": "¿Qué ayuda a sostener una ventaja basada en datos?", "options": ["Calidad, uso responsable y capacidad de actuar", "Acumular datos sin gobernanza", "Evitar medir resultados"], "answer": 0, "explanation": "La calidad, gobernanza y capacidad organizacional de actuar convierten los datos en una ventaja." },
+            { "question": "¿Cómo se comprueba si una iniciativa generó valor?", "options": ["Midiendo resultados frente a objetivos definidos", "Contando el número de pantallas", "Suponiendo que más datos siempre ayudan"], "answer": 0, "explanation": "Comparar resultados con objetivos y una línea base permite evaluar el valor de una iniciativa." }
+          ]
+        },
+        {
+          "id": "mission-4",
+          "number": 4,
+          "title": "Principales herramientas de BI",
+          "summary": "Las plataformas BI conectan fuentes, modelan datos y crean informes interactivos. La elección debe responder a las necesidades, habilidades, gobernanza y presupuesto de la organización.",
+          "quiz": [
+            { "question": "¿Qué criterio es clave al elegir una herramienta BI?", "options": ["Que resuelva necesidades y se integre con las fuentes existentes", "Que tenga más colores", "Que no permita compartir resultados"], "answer": 0, "explanation": "La adecuación funcional, integración, seguridad, costo y capacidades del equipo orientan una elección útil." },
+            { "question": "¿Para qué sirve un modelo semántico?", "options": ["Dar significado y relaciones consistentes a los datos", "Cambiar los datos sin reglas", "Sustituir todas las fuentes"], "answer": 0, "explanation": "Un modelo semántico organiza entidades, relaciones y medidas con definiciones compartidas." },
+            { "question": "¿Cuál es una herramienta de análisis y visualización BI?", "options": ["Power BI", "Un editor de texto plano exclusivamente", "Un sistema operativo"], "answer": 0, "explanation": "Power BI permite modelar, analizar y compartir informes y paneles interactivos." },
+            { "question": "¿Qué práctica ayuda a compartir informes de forma segura?", "options": ["Aplicar permisos y gobernanza adecuados", "Publicar credenciales junto al informe", "Dar acceso público por defecto"], "answer": 0, "explanation": "Los permisos y las políticas de gobernanza protegen los datos y limitan el acceso según la necesidad." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-2",
+      "name": "Data Warehouse",
+      "subtitle": "Mundo 2 · La bóveda de los datos",
+      "evaluation": "Portafolio de prácticas",
+      "missions": [
+        {
+          "id": "mission-5",
+          "number": 5,
+          "title": "Variables de medición y análisis",
+          "summary": "Las variables cualitativas describen categorías y las cuantitativas expresan cantidades. Definir unidad, escala, periodo y granularidad permite comparaciones válidas.",
+          "quiz": [
+            { "question": "¿Cuál es una variable cuantitativa?", "options": ["Categoría de producto", "Cantidad de ventas", "Nombre del proveedor"], "answer": 1, "explanation": "La cantidad de ventas se expresa numéricamente y puede medirse." },
+            { "question": "¿Por qué importa la granularidad?", "options": ["Define el nivel de detalle de cada registro", "Cambia automáticamente la moneda", "Elimina la necesidad de contexto"], "answer": 0, "explanation": "La granularidad establece qué representa cada fila, como una venta por producto y día." },
+            { "question": "¿Qué conviene especificar para interpretar una métrica?", "options": ["Unidad, periodo y definición", "Solo el color del gráfico", "Únicamente el nombre del archivo"], "answer": 0, "explanation": "La definición, unidad y periodo evitan ambigüedades al comparar mediciones." },
+            { "question": "¿Cuál es una variable cualitativa?", "options": ["Método de pago", "Ingresos en dólares", "Número de transacciones"], "answer": 0, "explanation": "El método de pago clasifica observaciones en categorías; ingresos y transacciones son cuantitativos." }
+          ]
+        },
+        {
+          "id": "mission-6",
+          "number": 6,
+          "title": "Data Warehouse",
+          "summary": "Un Data Warehouse integra datos históricos de distintas fuentes, organizados para consultas y análisis. Su diseño documenta granularidad, dimensiones, hechos y reglas de calidad.",
+          "quiz": [
+            { "question": "¿Para qué se diseña principalmente un Data Warehouse?", "options": ["Para análisis integrado e histórico", "Para reemplazar los sistemas operacionales de captura", "Para guardar únicamente imágenes"], "answer": 0, "explanation": "Un almacén analítico integra información histórica para consultas y toma de decisiones." },
+            { "question": "En un esquema dimensional, ¿qué suele contener una tabla de hechos?", "options": ["Medidas y claves hacia dimensiones", "Solo descripciones extensas", "Únicamente instrucciones de usuario"], "answer": 0, "explanation": "Los hechos registran eventos medibles y se relacionan con dimensiones descriptivas." },
+            { "question": "¿Qué se debe acordar antes de agregar medidas?", "options": ["La granularidad del hecho", "El color de fondo", "El nombre de cada gráfico"], "answer": 0, "explanation": "La granularidad define qué evento mide cada fila y previene sumas o conteos incorrectos." },
+            { "question": "¿Qué beneficio ofrece conservar datos históricos integrados?", "options": ["Analizar tendencias entre periodos y fuentes", "Evitar definir indicadores", "Garantizar que los datos no necesiten validación"], "answer": 0, "explanation": "La integración histórica facilita comparaciones y análisis a lo largo del tiempo." }
+          ]
+        },
+        {
+          "id": "mission-7",
+          "number": 7,
+          "title": "Sistemas de gestión del conocimiento",
+          "summary": "Estos sistemas capturan, organizan y comparten conocimiento explícito y experiencias. Metadatos, documentación y colaboración ayudan a reutilizar lo aprendido.",
+          "quiz": [
+            { "question": "¿Qué busca la gestión del conocimiento?", "options": ["Facilitar la creación, organización y reutilización del conocimiento", "Eliminar toda colaboración", "Guardar información sin hacerla accesible"], "answer": 0, "explanation": "El objetivo es que el conocimiento pueda compartirse y aplicarse cuando se necesita." },
+            { "question": "¿Cuál es un ejemplo de conocimiento explícito?", "options": ["Un procedimiento documentado", "Una intuición que nunca se comunica", "Un rumor sin verificar"], "answer": 0, "explanation": "Un procedimiento escrito es conocimiento explícito, codificado y compartible." },
+            { "question": "¿Cómo ayuda la documentación de un indicador?", "options": ["Registra definición, cálculo y responsable", "Aumenta automáticamente el valor", "Reemplaza la validación"], "answer": 0, "explanation": "Documentar definición, cálculo, fuente y responsable facilita comprensión y reutilización." },
+            { "question": "¿Qué ejemplo representa conocimiento tácito?", "options": ["La experiencia práctica no documentada de una analista", "Un manual publicado", "Un diccionario de datos aprobado"], "answer": 0, "explanation": "El conocimiento tácito reside en la experiencia y habilidades de las personas y no siempre está formalizado." }
+          ]
+        },
+        {
+          "id": "mission-8",
+          "number": 8,
+          "title": "Patrones: evaluación, interpretación y visualización",
+          "summary": "Evaluar patrones exige comparar con referencias pertinentes, comprobar calidad y distinguir asociación de causalidad. La visualización debe hacer visible la evidencia sin distorsionarla.",
+          "quiz": [
+            { "question": "¿Qué permite una serie temporal?", "options": ["Observar cómo cambia una métrica a lo largo del tiempo", "Probar causalidad automáticamente", "Eliminar estacionalidad sin analizarla"], "answer": 0, "explanation": "Las series temporales muestran evolución, aunque identificar causas requiere evidencia adicional." },
+            { "question": "Si dos métricas cambian juntas, ¿qué puede concluirse?", "options": ["Que una necesariamente causa la otra", "Que existe una asociación que requiere investigación", "Que los datos son falsos"], "answer": 1, "explanation": "La correlación no demuestra causalidad; hay que considerar contexto y explicaciones alternativas." },
+            { "question": "¿Qué práctica evita una visualización engañosa?", "options": ["Etiquetar ejes y elegir escalas adecuadas", "Ocultar unidades", "Recortar escalas sin indicarlo"], "answer": 0, "explanation": "Etiquetas, unidades y escalas honestas permiten interpretar la evidencia correctamente." },
+            { "question": "¿Qué gráfico suele mostrar una tendencia temporal?", "options": ["Gráfico de líneas", "Gráfico circular sin orden temporal", "Diagrama de dispersión sin fechas"], "answer": 0, "explanation": "Una línea ordenada en el tiempo ayuda a identificar tendencias, picos y variaciones." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-3",
+      "name": "Toma de decisiones",
+      "subtitle": "Mundo 3 · Del análisis a la acción",
+      "evaluation": "Proyecto final con rúbrica",
+      "missions": [
+        {
+          "id": "mission-9",
+          "number": 9,
+          "title": "Vistas multidimensionales (hipercubos)",
+          "summary": "Un modelo multidimensional organiza medidas por dimensiones como tiempo, lugar o producto. Permite explorar agregaciones y cambiar de perspectiva para responder preguntas analíticas.",
+          "quiz": [
+            { "question": "En un modelo multidimensional, ¿qué representa una dimensión?", "options": ["Una perspectiva para analizar medidas, como tiempo o producto", "El resultado final de cualquier cálculo", "Una contraseña"], "answer": 0, "explanation": "Las dimensiones proporcionan perspectivas y jerarquías para segmentar las medidas." },
+            { "question": "¿Qué describe una medida?", "options": ["Un valor cuantificable, como ingresos o unidades", "Un título de página", "Una lista de usuarios"], "answer": 0, "explanation": "Las medidas cuantifican hechos y pueden agregarse según las dimensiones." },
+            { "question": "¿Qué permite cambiar de año a trimestre en una jerarquía temporal?", "options": ["Drill-down o exploración de detalle", "Cifrado", "Eliminación del modelo"], "answer": 0, "explanation": "La navegación jerárquica cambia el nivel de detalle, por ejemplo de año a trimestre." },
+            { "question": "En ventas por fecha y producto, ¿cuál sería una medida?", "options": ["Ingresos", "Mes", "Categoría de producto"], "answer": 0, "explanation": "Los ingresos son una medida cuantificable; fecha y producto son dimensiones de análisis." }
+          ]
+        },
+        {
+          "id": "mission-10",
+          "number": 10,
+          "title": "Procesos ETL",
+          "summary": "ETL extrae datos de fuentes, los transforma para validar, limpiar y armonizar, y los carga en un destino analítico. El seguimiento de errores y la trazabilidad son esenciales.",
+          "quiz": [
+            { "question": "¿Qué secuencia corresponde a ETL?", "options": ["Extraer → Transformar → Cargar", "Transformar → Cargar → Extraer", "Cargar → Extraer → Eliminar"], "answer": 0, "explanation": "ETL significa Extraer, Transformar y Cargar, en ese orden." },
+            { "question": "¿Cuál es un ejemplo de transformación?", "options": ["Estandarizar formatos de fecha y corregir valores inválidos", "Copiar datos sin validación", "Desconectar la fuente"], "answer": 0, "explanation": "La transformación mejora consistencia y calidad antes de cargar al destino." },
+            { "question": "¿Por qué conservar trazabilidad en un ETL?", "options": ["Para rastrear el origen y los cambios de los datos", "Para ocultar errores", "Para evitar monitorear las cargas"], "answer": 0, "explanation": "La trazabilidad permite auditar el flujo, investigar errores y explicar resultados." },
+            { "question": "¿Qué conviene hacer ante un registro con fecha inválida?", "options": ["Validarlo y corregirlo o registrarlo como error", "Cargarlo sin revisión", "Cambiarlo aleatoriamente"], "answer": 0, "explanation": "Las reglas de calidad deben detectar errores y definir su tratamiento antes de cargar los datos." }
+          ]
+        },
+        {
+          "id": "mission-11",
+          "number": 11,
+          "title": "Reporteadores",
+          "summary": "Los reportes comunican métricas con filtros, periodos y definiciones claras. Un reporte útil está orientado a una audiencia y facilita encontrar respuestas sin perder contexto.",
+          "quiz": [
+            { "question": "¿Qué mejora la utilidad de un reporte?", "options": ["Alinearlo con las preguntas de su audiencia", "Incluir todas las métricas sin jerarquía", "Ocultar el periodo analizado"], "answer": 0, "explanation": "Un reporte claro prioriza las necesidades de quienes lo usarán y hace explícito el contexto." },
+            { "question": "¿Qué debe acompañar a una métrica reportada?", "options": ["Definición y periodo", "Solo una animación", "Una conclusión sin fuente"], "answer": 0, "explanation": "La definición y el periodo ayudan a interpretar y comparar correctamente la métrica." },
+            { "question": "¿Qué describe un reporte interactivo?", "options": ["Permite explorar datos, por ejemplo mediante filtros", "Impide consultar detalles", "Se actualiza solo si se elimina la fuente"], "answer": 0, "explanation": "Los filtros y opciones de exploración permiten adaptar la vista a preguntas específicas." },
+            { "question": "¿Qué aporta indicar la fuente y fecha de actualización?", "options": ["Transparencia y contexto para interpretar el reporte", "Una garantía automática de causalidad", "Un reemplazo de los controles de calidad"], "answer": 0, "explanation": "La procedencia y actualidad ayudan a valorar la cobertura y vigencia de la información." }
+          ]
+        },
+        {
+          "id": "mission-12",
+          "number": 12,
+          "title": "Dashboards, alertas y KPIs",
+          "summary": "Un dashboard reúne indicadores relevantes para una audiencia y objetivo. Un KPI mide progreso hacia una meta, mientras una alerta señala una condición que requiere atención.",
+          "quiz": [
+            { "question": "¿Qué distingue a un KPI de cualquier métrica?", "options": ["Está vinculado a un objetivo y ayuda a evaluar su avance", "Siempre es un porcentaje", "No requiere interpretación"], "answer": 0, "explanation": "Un KPI es una métrica estratégica ligada a un objetivo, con contexto y criterio de seguimiento." },
+            { "question": "¿Para qué sirve una alerta?", "options": ["Notificar una condición relevante que puede requerir acción", "Reemplazar el análisis de causas", "Mostrar todos los datos sin prioridad"], "answer": 0, "explanation": "Una alerta dirige atención a una condición definida; luego se analiza y decide cómo actuar." },
+            { "question": "¿Qué debe priorizar un dashboard?", "options": ["Indicadores y contexto pertinentes para su audiencia", "La mayor cantidad de gráficos posible", "Solo elementos decorativos"], "answer": 0, "explanation": "Un tablero efectivo prioriza señales relevantes y contexto accionable para una audiencia concreta." },
+            { "question": "¿Qué debe definirse para que una alerta sea accionable?", "options": ["Un umbral y una condición relevantes", "Solo el color del icono", "Una notificación sin destinatario ni contexto"], "answer": 0, "explanation": "Una alerta útil tiene una condición o umbral claro, un responsable y contexto para actuar." }
+          ]
+        }
+      ]
+    }
+  ],
+  "bosses": [
+    { "id": "eval-1", "name": "EVAL1", "title": "Fundamentos de BI", "deadline": "2026-11-23T04:59:00Z", "worldId": "world-1" },
+    { "id": "eval-2", "name": "EVAL2", "title": "Data Warehouse", "deadline": "2027-01-11T04:59:00Z", "worldId": "world-2" },
+    { "id": "eval-3", "name": "EVAL3", "title": "Toma de decisiones", "deadline": "2027-02-15T04:59:00Z", "worldId": "world-3" }
+  ],
+  "checklist": ["Clase", "Práctica", "Material", "Trabajo autónomo"],
+  "xp": { "mission": 40, "quiz": 30, "reading": 20, "sideQuestStep": 15 },
+  "sideQuest": {
+    "title": "PlasTrack · Microplásticos desde el espacio",
+    "summary": "Diseña un tablero conceptual que combine observaciones satelitales de Copernicus con indicadores y alertas para orientar el monitoreo de microplásticos. La detección satelital aporta contexto ambiental, pero no identifica por sí sola microplásticos directamente.",
+    "checklist": [
+      "Define la pregunta de monitoreo y el área de interés.",
+      "Identifica variables y productos de observación de Copernicus pertinentes como contexto ambiental.",
+      "Documenta fuentes, fechas, cobertura y limitaciones de los datos.",
+      "Propón KPIs con definición, unidad, frecuencia y meta.",
+      "Diseña un dashboard y una alerta con umbrales explicables."
+    ]
+  },
+  "library": [
+    { "id": "book-bi-project", "title": "¿Cómo planificar un proyecto de inteligencia de negocio?", "url": "https://elibro.net/es/lc/utcotopaxi/titulos/58548" },
+    { "id": "book-database", "title": "Base de datos", "url": "https://elibro.net/es/lc/utcotopaxi/titulos/121283" },
+    { "id": "book-decisions", "title": "La toma de decisiones en la práctica", "url": "https://elibro.net/es/lc/utcotopaxi/titulos/227386" },
+    { "id": "book-excel-powerbi", "title": "Excel y Power BI: el cóctel perfecto", "url": "https://elibro.net/es/lc/utcotopaxi/titulos/282827" },
+    { "id": "book-powerbi-docs", "title": "Documentación oficial de Power BI", "url": "https://learn.microsoft.com/es-es/power-bi/" }
+  ]
+}
